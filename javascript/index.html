@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <h2>Javascript can change HTML content.</h2>
+  <button id="demo" onclick="clickDemo()">Click me?</button>
+  <hr>
+  <h2>Javascritp can change HTML attributes.</h2>
+  <p>in this case javascript changes the src attribute of an image.</p>
+  <p>Click image</p>
+  <img src="image/1.jpg" id="image" onclick="clickImage()">
+  <hr>
+  <h2>Javascipt can change the style of an HTML element</h2>
+  <p id="demo2" onclick="clickDemo2()">Javascript can change the style of an HTML element.</p>
+  <hr>
+  <h2>Javascript can hide HTML elements</h2>
+  <p id="demo3">This is content I want to hide</p>
+  <button onclick="clickDemo3()">clickme</button>
+
+  <h2>Javascript can show HTML elements</h2>
+  <p id="demo4">This is content be hide</p>
+  <button onclick="clickDemo4()">click me to show content</button>
+  <hr>
+  <h2>Javascript can display the value of each element in the form</h2>
+  <form id="form">
+    first name: <input type="text" name="name" value="An"><br>
+    last name: <input type="text" name="last_name" value="Tran"><br>
+    <input type="submit" name="" value="Submit">
+  </form>
+  <p id="demo5"></p>
+  <button onclick="clickForm()">Click me to show value of form</button>
+  <hr>
+  <h2>display the selected option in a dropdown list</h2>
+  <form>
+    Select your favorite fruit:
+    <select id="mySelect">
+      <option>Apple</option>
+      <option>Orange</option>
+      <option>Pineapple</option>
+      <option>Banana</option>
+    </select>
+  </form>
+  <p id="demo6"></p>
+  <input type="button" onclick="getOption()" value="Click Me!" name="">
+
+  <!-- validate form -->
+  <hr>
+  <div class="container">
+    <h2>Horizontal form</h2>
+    <form class="form-horizontal" action="#" name="myform">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-6">
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Password:</label>
+        <div class="col-sm-6">          
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+        </div>
+      </div>
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-6">
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-6">
+          <button type="submit" class="btn btn-default" onclick="validateForm()">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="scroll"><span></span></div>
+  <script type="text/javascript" src="js.js"></script>
+</body>
+</html>
