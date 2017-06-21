@@ -158,6 +158,19 @@ hr {
   transition: 0.3s;
 }
 
+.div1 {
+  float: left;
+  border: 1px solid red;
+  width: 400px;
+  margin-left: 100px;
+  padding-left: 500px;
+}
+.div2 {
+  float: left;
+  border: 1px solid blue;
+  width: 400px;
+}
+
 @-webkit-keyframes zoom {
   from {-webkit-transform: scale(0)}
   to {-webkit-transform:scale(1)}
@@ -183,4 +196,116 @@ hr {
   body {
     background-color: green;
   }
+}
+
+.board .nav-tabs {
+  position: relative;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+.board > div.board-inner > .nav-tabs {
+  border: none;
+}
+
+p.narrow {
+  width: 60%;
+  margin: 10px auto;
+}
+
+.liner {
+  height: 2px;
+  background: #ddd;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #555555;
+  cursor: default;
+  border: 0;
+  border-bottom-color: transparent;
+  outline: 0;
+}
+
+span.round-tabs {
+  width: 35px;
+  height: 35px;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: 100px;
+  background: white;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  font-size: 25px;
+}
+
+span.round-tabs.one {
+  border: 2px solid #ddd;
+  color: #ddd;
+}
+
+li.active span.round-tabs.one,
+li.active span.round-tabs.two,
+li.active span.round-tabs.three,
+li.active span.round-tabs.four {
+  background: #009acd !important;
+  border: 2px solid #009acd;
+  color: #fff;
+}
+
+span.round-tabs.two {
+  border: 2px solid #ddd;
+  color: #ddd;
+}
+
+span.round-tabs.three {
+  border: 2px solid #ddd;
+  color: #ddd;
+}
+
+span.round-tabs.four {
+  border: 2px solid #ddd;
+  color: #ddd;
+}
+
+.nav-tabs > li.active > a span.round-tabs {
+  background: #fafafa;
+}
+
+.nav-tabs > li {
+  width: 29%;
+}
+
+.nav-tabs > li a {
+  width: 70px;
+  height: 35px;
+  border-radius: 100%;
+  padding: 0;
+}
+
+.nav-tabs > li a:hover {
+  background: transparent;
+}
+
+.tab-pane {
+  position: relative;
+}
+
+.btn-outline-rounded {
+  padding: 10px 40px;
+  margin: 20px 0;
+  border: 2px solid transparent;
+  border-radius: 25px;
+}
+
+.btn.green {
+  background-color: #009acd;
+  color: #ffffff;
 }
