@@ -242,136 +242,59 @@ p.title-info {
   font-size: 20px;
   margin: 50px 0;
 }
-
-/*bootsnip*/
-.bootstrapWizard {
-    display: block;
-    list-style: none;
-    padding: 0;
-    position: relative;
-    width: 100%
+/*plan-contain*/
+.plan-contain ul li {
+  border: 1px solid red;
+  border-radius: 5px;
+  padding-top: 10px;
 }
-
-.bootstrapWizard li {
-    display: block;
-    float: left;
-    width: 25%;
-    text-align: center;
-    padding-left: 0
+.navbar-right > li {
+  margin-right: 20px;
 }
-
-.bootstrapWizard li:before {
-    border-top: 2px solid rgb(239,242,247);
-    content: "";
-    display: block;
-    font-size: 0;
-    overflow: hidden;
-    position: relative;
-    top: 11px;
-    right: 1px;
-    width: 100%;
-    z-index: 1
+ul.navbar-right {
+  margin-right: 10px;
 }
-
-.bootstrapWizard li:first-child:before {
-    left: 50%;
-    max-width: 50%
+.plan-contain ul {
+  list-style: none;
+  overflow: auto;
 }
-
-.bootstrapWizard li:last-child:before {
-    max-width: 50%;
-    width: 50%
-}
-
-/*.bootstrapWizard li.complete .step {
-    background: #0aa66e;
-    padding: 1px 6px;
-    border: 3px solid #55606E
+/*.plan-contain ul li {
+  position: relative;
 }*/
-
-.bootstrapWizard li .step i {
-    font-size: 10px;
-    font-weight: 400;
-    position: relative;
-    top: -1.5px
+.plan-contain input[type=radio] {
+  display: none;
 }
 
-.bootstrapWizard li .step {
-    background: #fff;
-    color: rgb(64,64,64);
-    display: inline;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 12px;
-    padding: 7px 13px;
-    border: 2px solid rgb(239,242,247);
-    border-radius: 50%;
-    line-height: normal;
-    position: relative;
-    text-align: center;
-    z-index: 2;
-    transition: all .1s linear 0s
+div.check-span span{
+  width: 100px;
+  margin: 0 auto;
 }
-
-.bootstrapWizard li.active .step{
-    background: rgb(0,170,228);
-    color: #fff;
-    font-weight: 700;
-    padding: 7px 13px;
-    font-size: 15px;
-    border-radius: 50%;
-    border: 0px;
-    text-decoration: none;
+div.check-span span {
+  position: relative;
+  display: block;
+  border: 2px solid red;
 }
-
-.bootstrapWizard li.complete .title,.bootstrapWizard li.active .title {
-    color: #2B3D53;
-    text-decoration: none;
+input[type=radio]:empty ~ label div.check-span span:before {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: -30px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(222,222,222);
+  border-radius: 100%;
 }
-.bootstrapWizard li.active .title a {
-  text-decoration: none;
+input[type=radio]:checked ~ label div.check-span span:before {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: -30px;
+  content:'\f00c';
+  font-family: 'FontAwesome';
+  font-size: 13px;
+  border: 2px solid rgb(0,170,228);
+  color: rgb(0,170,228);
+  /*background-color: #fff;*/
 }
-.form-bootstrapWizard a {
-  text-decoration: none;
-}
-.bootstrapWizard li .title {
-    color: #bfbfbf;
-    text-decoration: none;
-    display: block;
-    font-size: 13px;
-    line-height: 15px;
-    max-width: 100%;
-    position: relative;
-    table-layout: fixed;
-    text-align: center;
-    top: 20px;
-    word-wrap: break-word;
-    z-index: 104;
-    text-decoration: none;
-}
-.bootstrapWizard li .title:hover {
-  text-decoration: none;
-}
-/*.setting {
-  color: #fff;
-  margin-top: 9px;
-}
-.setting span {
-  font-weight: bold;
-  font-size: 15px;
-}
-.setting i {
-  margin-right: 8px;
-}
-.login {
-  color: #fff;
-  font-weight: bold;
-  margin-top: 9px;
-}
-.login i {
-  margin-right: 7px;
-}
-.login span {
-  font-weight: bold;
-  font-size: 15px;
-}*/
+input[type=radio]:checked  

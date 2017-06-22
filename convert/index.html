@@ -28,25 +28,31 @@
     <div class="container-fluid">
         <div class="row">
           <div class="head-logo">
-            <div class="col-lg-8 col-md-6 col-sm-6 logo">
+            <div class="col-lg-7 col-md-6 col-sm-4 col-xs-2 logo">
               <img src="image/logo.png" class="img-responsive">
-            </div> 
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="setting">
-                <i class="glyphicon glyphicon-cog"></i><span>Drone Admin 3</span>
-              </div>  
-              <div class="login">
-                <i class="glyphicon glyphicon-log-in"></i><span>ログアウト</span>
-              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-8 col-xs-10" >
+              <ul class="nav-menu nav navbar-nav navbar-right">
+                <li>
+                  <div class="setting">
+                    <i class="glyphicon glyphicon-cog"></i><span>Drone Admin 3</span>
+                  </div>
+                </li>
+                <li>
+                <div class="login">
+                  <i class="glyphicon glyphicon-log-in"></i><span>ログアウト</span>
+                </div>
+              </li>
+              </ul>
             </div>
           </div>
         </div>  
       <div class="row">
         <div class="dash-board">
-          <div class="col-lg-3 col-md-3 col-sm-3 drone-image">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-2 drone-image">
             <img src="image/drone.png" class="drone-image">
           </div>
-          <div class="col-lg-9 col-md-9 col-sm-9 tera-maper">
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-10 tera-maper">
             <img src="image/tera_maper.png" class="img-responsive">
             <p>Shoot photos and generate DSM data automatically</p>
           </div>
@@ -85,17 +91,60 @@
             </div>
         </div>
       </div>
-    </div>
-      <div class="row plan-contain">
-        <class class="col-lg-10 col-lg-offset-1">
-          <div class="">plan contain</div>
-        </class>
+      <div class="container plan-contain">
+        <div class="row">
+          <ul>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+            <li>
+              <input type="radio" name="plan" id="check-demo" value="">
+              <label for="check-demo">
+                <div class="check-span">
+                  <span>DEMO</span>
+                </div>
+                <span>0 JPY per month</span>
+                <span>-Up to 200 photos per photoset</span>
+                <span>-Up to 2 photoset per project</span>
+                <span>-Up to 3* projects</span>
+                <span>*2 defeaut project to read only</span>
+              </label>
+            </li>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+            <li>
+              <input type="radio" name="plan" id="check-standard" value="">
+              <label for="check-standard">
+                <div class="check-span">
+                  <span>STANDARD</span>
+                </div>
+                <span>100,000 JPY per month</span>
+                <span>-Up to 1000 photos per photoset</span>
+                <span>-Up to 100 photoset per project</span>
+                <span>-Up to 100 projects</span>
+              </label>
+            </li> 
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+            <li>
+              <input type="radio" name="plan" id="check-pro" value="">
+              <label for="check-pro">
+                <div class="check-span">
+                  <span>PRO</span>
+                </div>
+                <span>300,000 JPY per month</span>
+                <span>-No limit photos count photoset</span>
+                <span>-No limit photoset count project</span>
+                <span>-No limit projects count</span>
+              </label>
+            </li>
+          </div>
+          </ul>
+        </div>
       </div>
       <div class="container">
         <div class="extra-plan">
           <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-5 col-md-offset-5 col-sm-off-5 col-xs-off-5">
-              <span>GCP</span>
+            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-7 col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-xs-offset-5">
+              <div class="check"></div><span>GCP</span>
               <span class="price">100,000 JPY per oparation</span>
             </div>
           </div>
@@ -185,3 +234,31 @@
   <script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
+DEMO
+0 JPY per mo
+
+-Up to 200 photos per photoset
+
+-Up to 2 photoset per project
+
+-Up to 3* projects
+
+*2 defeaut project to read only
+
+STANDARD
+100,000 JPY per mo
+
+-Up to 1000 photos per photoset
+
+-Up to 100 photoset per project
+
+-Up to 100 projects
+
+PRO
+300,000 JPY per mo
+
+-No limit photos count photoset
+
+-No limit photoset count project
+
+-No limit projects count
