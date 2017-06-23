@@ -1,15 +1,16 @@
-header {
-  width: 100%;
-  height: 290px;
+nav.navbar {
+  margin-bottom: 0 !important;
 }
-.head-logo {
-  width: 100%;
-  height: 40px;
-  background-color: rgb(0,170,228);
+.navbar-default {
+  background: rgb(0,170,228) !important;
+  border-radius: 0 !important;
+  margin: 0;
+  color: white;
+}
+.navbar-default .navbar-nav>li>a {
+  color: white !important;
 }
 .logo img {
-  width: 150px;
-  height: 24px;
   margin-top: 8px;
   margin-left: 24px;
 }
@@ -33,9 +34,189 @@ header {
 .login i {
   margin-right: 8px;
 }
+
+@media (min-width: 379px) and (max-width: 440px) {
+  .logo img {
+    margin-left: 20px;
+    margin-top: 14px;
+  }
+  div.dash-board {
+    background: url("image/dashboard.jpg") no-repeat;
+    height: 280px;
+  }
+  div.drone-image img {
+    margin-left: 90px;
+    width: 200px;
+    height: 140px;
+  }
+  div.tera-maper {
+    margin-top: 0px;
+  }
+  div.tera-maper img {
+    margin-left: 70px;
+  }
+  div.tera-maper p {
+    text-align: center;
+    margin-left: 0px;
+  }
+  div.plan-contain ul li {
+    margin-left: 30px;
+    width: 260px;
+  }
+  button.btn-cancle {
+    margin-left: 30px;
+  }
+  .extra-check .check-span {
+    margin-left: 50px;
+  }
+  div.board-inner ul.nav-tabs {
+    margin-right: 0px;
+  }
+}
+@media (min-width: 441px) and (max-width: 480px) {
+  div.dash-board {
+    height: 320px;
+  }
+  .drone-image img {
+    margin-left: 80px;
+  }
+  div.tera-maper img {
+    margin-left: 120px;
+  }
+  div.tera-maper p {
+    margin-left: 30px;
+    text-align: center;
+  }
+  ul.nav-tabs {
+    margin-right: 0;
+  }
+  div.tera-maper {
+    margin-top: 20px;
+  }
+  div.plan-contain ul li {
+    margin-left: 60px;
+    width: 280px;
+  }
+}
+@media (min-width: 481px) and (max-width: 540px) {
+  div.dash-board {
+    height: 340px;
+  }
+  div.tera-maper {
+    margin-top: 20px;
+  }
+  div.tera-maper p {
+    text-align: center;
+    margin-left: 30px;
+  }
+  div.tera-maper img {
+    margin-left: 120px;
+  }
+  div.drone-image img {
+    margin-left: 90px;
+  }
+  ul.voting {
+    margin-right: 0;
+  }
+  div.plan-contain ul li {
+    margin-left: 70px;
+    width: 28 0px;
+  }
+}
+@media (min-width: 541px) and (max-width: 640px) {
+  div.dash-board {
+    height: 340px;
+  }
+  div.drone-image img {
+    margin-left: 140px;
+  }
+  div.tera-maper img {
+    margin-left: 180px;
+  }
+  div.tera-maper {
+    margin-top: 20px;
+  }
+  div.tera-maper p {
+    margin-left: 70px;
+  }
+}
+@media (min-width: 641px) and (max-width: 720px) {
+  div.dash-board {
+    height: 340px;
+  }
+  div.drone-image img {
+    margin-left: 170px;
+    width: 280px;
+    height: 200px;
+  }
+  div.tera-maper {
+    margin-top: 20px;
+  }
+  div.tera-maper img {
+    margin-left: 200px;
+  }
+  div.tera-maper p {
+    text-align: center;
+    margin-left: 0px;
+  }
+  div.plan-contain ul li {
+    width: 380px;
+    padding: 20px 60px;
+  }
+  button.btn-cancle {
+    margin-left: 50px;
+  }
+  div.plan-contain {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 721px) and (max-width: 767px) {
+  div.dash-board {
+    height: 420px;
+  }
+  div.drone-image img {
+    margin-left: 180px;
+    width: 320px;
+    height: 260px;
+  }
+  div.tera-maper {
+    margin-top: 20px;
+  }
+  div.plan-contain ul li {
+    width: 380px;
+    margin-left: 160px;
+    padding: 20px 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 970px) {
+  ul.voting {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  div.plan-contain ul li {
+    margin-left: 30px;
+    width: 280px;
+  }
+  button.btn-cancle {
+    margin-left: 80px;
+  }
+}
+@media (min-width: 970px) and (max-width: 990px) {
+  div.plan-contain ul li {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 971px) and (max-width: 1200px) {
+  div.plan-contain ul li {
+    width: 280px;
+  }
+  button.btn-cancle {
+    margin-left: 140px;
+  }
+}
 .dash-board {
   background: url("image/dashboard.jpg") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 248px;
 }
 .drone-image img {
@@ -55,6 +236,72 @@ header {
   word-spacing: 5px;
   letter-spacing: 2px;
 }
+#content .container-fluid .panel {
+  background-color: transparent !important;
+}
+@media (min-width: 319px) and (max-width: 378px) {
+  .dash-board {
+    background: url("image/dashboard.jpg") no-repeat;
+    height: 248px;
+  }
+  .drone-image img {
+    width: 200px;
+    height: 140px;
+  }
+  .tera-maper {
+    margin-top: 0px;
+  }
+  .tera-maper img {
+    margin-left: 50px;
+  }
+  .tera-maper p {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .navbar-inner ul li {
+    height: 20px;
+  }
+  .navbar-inner ul li {
+    padding-top: 22px;
+  }
+  .voting .liner {
+    width: 60%;
+    left: 22%;
+    top: 170%;
+  }
+  .panel-heading ul {
+    margin-right: 0px;
+  }
+  .extra-check .check-span {
+    margin-left: 50px;
+  }
+  .row-plan .price-plan {
+    width: 200px;
+    margin-left: 30px;
+  }
+  .plan-contain .check-span {
+    margin-left: 50px;
+  }
+  div.plan-contain ul li {
+
+  }
+  .extra-plan {
+    margin: 0;
+  }
+  .agree {
+    margin-left: 100px;
+  }
+  div.check-agree {
+    margin: 0 0 10px 0;
+  }
+  button.btn-cancle {
+    margin-left: 20px;
+  }
+  .plan-contain ul div {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 /*step*/
 .board .nav-tabs {
   position: relative;
@@ -70,12 +317,11 @@ header {
   height: 2px;
   background: rgb(239,242,247);
   position: absolute;
-  width: 60%;
-  right: 200px;
+  width: 70%;
+  left: 24%;
   top: 92%;
   z-index: 1;
 }
-
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: rgb(239,242,247);
   cursor: default;
@@ -83,7 +329,6 @@ header {
   border-bottom-color: transparent;
   outline: 0;
 }
-
 span.round-tabs {
   width: 42px;
   height: 42px;
@@ -97,7 +342,6 @@ span.round-tabs {
   text-align: center;
   font-size: 20px;
 }
-
 .nav-tabs span.title {
   position: absolute;
   top: 60px;
@@ -119,44 +363,39 @@ li.active span.round-tabs.four {
   border: 0;
   color: #fff;
 }
-
 span.round-tabs.two {
   border: 2px solid rgb(239,242,247);
   color: rgb(64,64,64);
 }
-
 span.round-tabs.three {
   border: 2px solid rgb(239,242,247);
   color: rgb(64,64,64);
 }
-
 .nav-tabs > li.active > a span.round-tabs {
   background: #fafafa;
 }
-
 .nav-tabs > li {
-  width: 29%;
+  width: 33%;
 }
 .voting > li > a:focus, .voting > li > a:hover {
   border-color: transparent !important;
   background: transparent !important;
 }
-
+.voting {
+  margin-right: 60px;
+}
 .nav-tabs > li a {
   width: 70px;
   height: 35px;
   border-radius: 100%;
   padding: 0;
 }
-
 .nav-tabs > li a:hover {
   background: transparent;
 }
-
 .tab-pane {
   position: relative;
 }
-
 .btn-outline-rounded {
   padding: 10px 40px;
   margin: 20px 0;
@@ -185,18 +424,13 @@ span.round-tabs.three {
 
 .extra-plan {
   border: 1px solid rgb(239,242,247);
-  border-radius: 5px;
-  margin: 20px 0;
+  border-radius: 10px;
+  margin: 10px 20px;
   padding: 20px;
 }
 
 .price {
   display: block;
-}
-.plan-contain {
-  height: 286px;
-  border: 1px solid green;
-  margin-top: 60px;
 }
 .title {
   display: inline-block;
@@ -205,8 +439,8 @@ span.round-tabs.three {
   left: 0px;
 }
 .btn {
-  width: 348px;
-
+  width: 60%;
+  text-align: center;
 }
 .footer {
   margin-bottom: 20px;
@@ -220,6 +454,14 @@ span.round-tabs.three {
   background-color: rgb(0,170,228);
   color: #fff;
 }
+.footer .btn-next:hover {
+  color: white;
+}
+@media (min-width: 319px) and (max-width: 360px) {
+  .btn {
+    width: 100%;
+  }
+}
 .check-agree {
   margin: 50px 0;
 }
@@ -229,10 +471,8 @@ span.round-tabs.three {
 }
 .law-register {
   border: 1px solid rgb(239,242,247);
-  padding: 20px 18px;
-}
-.form-group label {
-  //margin-left: 2px;
+  padding: 24px 18px;
+  border-radius: 10px;
 }
 .information input {
   background-color: rgb(239,242,247);
@@ -240,13 +480,20 @@ span.round-tabs.three {
 p.title-info {
   text-align: center;
   font-size: 20px;
-  margin: 50px 0;
+  margin: 20px 0;
 }
+
 /*plan-contain*/
+
+.plan-contain {
+  margin-top: 80px;
+}
 .plan-contain ul li {
-  border: 1px solid red;
-  border-radius: 5px;
-  padding-top: 10px;
+  border-radius: 10px;
+  padding: 10px 0 30px 10px;
+  width: 70%;
+  margin-left: 120px;
+  border: 1px solid rgb(239,242,247);
 }
 .navbar-right > li {
   margin-right: 20px;
@@ -256,23 +503,29 @@ ul.navbar-right {
 }
 .plan-contain ul {
   list-style: none;
-  overflow: auto;
 }
-/*.plan-contain ul li {
-  position: relative;
-}*/
 .plan-contain input[type=radio] {
   display: none;
 }
-
+@media (min-width: 319px) and (max-width: 380px) {
+  .plan-contain ul li {
+    padding: 10px 5px 5px 5px;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+}
 div.check-span span{
-  width: 100px;
+  width: 80px;
   margin: 0 auto;
+  font-weight: bold !important;
+}
+.plan-contain label span {
+  margin-bottom: 3px;
 }
 div.check-span span {
   position: relative;
   display: block;
-  border: 2px solid red;
 }
 input[type=radio]:empty ~ label div.check-span span:before {
   position: absolute;
@@ -284,6 +537,7 @@ input[type=radio]:empty ~ label div.check-span span:before {
   height: 20px;
   border: 2px solid rgb(222,222,222);
   border-radius: 100%;
+  background-color: rgb(243,243,243);
 }
 input[type=radio]:checked ~ label div.check-span span:before {
   position: absolute;
@@ -292,9 +546,55 @@ input[type=radio]:checked ~ label div.check-span span:before {
   left: -30px;
   content:'\f00c';
   font-family: 'FontAwesome';
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 1px;
+  line-height: 17px;
   border: 2px solid rgb(0,170,228);
   color: rgb(0,170,228);
-  /*background-color: #fff;*/
 }
-input[type=radio]:checked  
+.border-highlight {
+  border: 2px solid rgb(0,170,228);
+}
+.border-default {
+  border: 1px solid rgb(239,242,247);
+}
+span.price {
+  display: block;
+  width: 220px;
+  margin: 0 auto;
+  padding: 18px 0px;
+  font-weight: normal;
+}
+label.label-check span {
+  font-weight: normal;
+  display: block;
+}
+span.span-red {
+  color: red;
+}
+div.form-group {
+  border: none !important;
+}
+.extra-plan input[type=radio] {
+  display: none;
+}
+.extra-plan input[type=radio]:checked {
+  border: none !important;
+}
+label.extra-check {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+span.price-plan {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.agree {
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+}

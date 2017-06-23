@@ -16,43 +16,40 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
   <!-- header -->
   <header>
+    <nav class="navbar navbar-default head-nav">
+      <div class="container-fluid">
+        <div class="navbar-header logo">
+          <button type="button" data-target="#menu" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="image/logo.png">
+        </div>
+        <div id="menu" class="collapse navbar-collapse">
+          <ul class="nav-menu nav navbar-nav navbar-right">
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-cog"></i><span> &nbsp Drone Admin 3</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-log-in"></i><span>&nbsp ログアウト</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>  
+    </nav>
     <div class="container-fluid">
-        <div class="row">
-          <div class="head-logo">
-            <div class="col-lg-7 col-md-6 col-sm-4 col-xs-2 logo">
-              <img src="image/logo.png" class="img-responsive">
-            </div>
-            <div class="col-lg-5 col-md-6 col-sm-8 col-xs-10" >
-              <ul class="nav-menu nav navbar-nav navbar-right">
-                <li>
-                  <div class="setting">
-                    <i class="glyphicon glyphicon-cog"></i><span>Drone Admin 3</span>
-                  </div>
-                </li>
-                <li>
-                <div class="login">
-                  <i class="glyphicon glyphicon-log-in"></i><span>ログアウト</span>
-                </div>
-              </li>
-              </ul>
-            </div>
-          </div>
-        </div>  
       <div class="row">
         <div class="dash-board">
-          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-2 drone-image">
-            <img src="image/drone.png" class="drone-image">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 drone-image">
+            <img src="image/drone.png">
           </div>
-          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-10 tera-maper">
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 tera-maper">
             <img src="image/tera_maper.png" class="img-responsive">
             <p>Shoot photos and generate DSM data automatically</p>
           </div>
@@ -60,92 +57,96 @@
       </div>
     </div>
   </header>
-
   <!-- content -->
   <div id="content">
     <div class="container-fluid">
       <div class="navbar panel cz-panel">
         <div class="navbar-inner board">
-          <div class="col-lg-10 col-lg-offset-1 panel-heading board-inner panel-heading-create-poll">
+          <div class="col-lg-7 col-md-8 col-md-offset-2 col-sm-10 col-xs-12 col-xs-offset-0 col-lg-offset-2 panel-heading board-inner">
             <ul class="nav nav-tabs voting">
               <div class="liner"></div>
-                <li>
-                  <a href="#info" data-toggle="tab" data-toggle="tooltip"  title="{{ trans('polls.label.step_1') }}" class="step">
-                    <span class="round-tabs one">1</span>
-                    <span class="title">Select Plan</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#option" data-toggle="tab" data-toggle="tooltip" title="{{ trans('polls.label.step_2') }}" class="step">
-                    <span class="round-tabs two">2</span>
-                    <span class="title">Confirmation</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#setting" data-toggle="tab" data-toggle="tooltip" title="{{ trans('polls.label.step_3') }}" class="step">
-                    <span class="round-tabs three">3</span>
-                    <span class="title">Complete</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li>
+                <a href="#info" data-toggle="tab" data-toggle="tooltip"  title="{{ trans('polls.label.step_1') }}" class="step">
+                  <span class="round-tabs one">1</span>
+                  <span class="title">Select Plan</span>
+                </a>
+              </li>
+              <li>
+                <a href="#option" data-toggle="tab" data-toggle="tooltip" title="{{ trans('polls.label.step_2') }}" class="step">
+                  <span class="round-tabs two">2</span>
+                  <span class="title">Confirmation</span>
+                </a>
+              </li>
+              <li>
+                <a href="#setting" data-toggle="tab" data-toggle="tooltip" title="{{ trans('polls.label.step_3') }}" class="step">
+                  <span class="round-tabs three">3</span>
+                  <span class="title">Complete</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="container plan-contain">
-        <div class="row">
+      <div class="container">
+        <div class="row plan-contain">
           <ul>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
-            <li>
-              <input type="radio" name="plan" id="check-demo" value="">
-              <label for="check-demo">
-                <div class="check-span">
-                  <span>DEMO</span>
-                </div>
-                <span>0 JPY per month</span>
-                <span>-Up to 200 photos per photoset</span>
-                <span>-Up to 2 photoset per project</span>
-                <span>-Up to 3* projects</span>
-                <span>*2 defeaut project to read only</span>
-              </label>
-            </li>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
-            <li>
-              <input type="radio" name="plan" id="check-standard" value="">
-              <label for="check-standard">
-                <div class="check-span">
-                  <span>STANDARD</span>
-                </div>
-                <span>100,000 JPY per month</span>
-                <span>-Up to 1000 photos per photoset</span>
-                <span>-Up to 100 photoset per project</span>
-                <span>-Up to 100 projects</span>
-              </label>
-            </li> 
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
-            <li>
-              <input type="radio" name="plan" id="check-pro" value="">
-              <label for="check-pro">
-                <div class="check-span">
-                  <span>PRO</span>
-                </div>
-                <span>300,000 JPY per month</span>
-                <span>-No limit photos count photoset</span>
-                <span>-No limit photoset count project</span>
-                <span>-No limit projects count</span>
-              </label>
-            </li>
-          </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-xs-pull-1">
+              <li>
+                <input type="radio" name="plan" id="check-demo" value="">
+                <label for="check-demo" class="label-check">
+                  <div class="check-span">
+                    <span>DEMO</span>
+                  </div>
+                  <span class="price">0 JPY per month</span>
+                  <span>-Up to 200 photos per photoset</span>
+                  <span>-Up to 2 photoset per project</span>
+                  <span>-Up to 3* projects</span>
+                  <span class="span-red">*2 defeaut project to read only</span>
+                </label>
+              </li>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-xs-pull-1">
+              <li>
+                <input type="radio" name="plan" id="check-standard" value="">
+                <label for="check-standard" class="label-check">
+                  <div class="check-span">
+                    <span>STANDARD</span>
+                  </div>
+                  <span class="price">100,000 JPY per month</span>
+                  <span>-Up to 1000 photos per photoset</span>
+                  <span>-Up to 100 photoset per project</span>
+                  <span>-Up to 100 projects</span>
+                </label>
+              </li> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-xs-pull-1">
+              <li>
+                <input type="radio" name="plan" id="check-pro" value="">
+                <label for="check-pro" class="label-check">
+                  <div class="check-span">
+                    <span>PRO</span>
+                  </div>
+                  <span class="price">300,000 JPY per month</span>
+                  <span>-No limit photos count photoset</span>
+                  <span>-No limit photoset count project</span>
+                  <span>-No limit projects count</span>
+                </label>
+              </li>
+            </div>
           </ul>
         </div>
       </div>
       <div class="container">
         <div class="extra-plan">
           <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-7 col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-xs-offset-5">
-              <div class="check"></div><span>GCP</span>
-              <span class="price">100,000 JPY per oparation</span>
+            <div class="row-plan">
+              <input type="radio" name="extra-plan" id="check-plan" value="">
+              <label for="check-plan" class="extra-check">
+                <div class="check-span">
+                  <span>GCP</span>
+                </div>
+              </label>
+              <span class="price-plan">100,000 JPY per oparation</span>
             </div>
           </div>
           <div class="row">
@@ -160,34 +161,34 @@
         <p class="title-info">Credit card information</p>
         <form class="form-horizontal" role="form">
           <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 col-xs-offset-1 col-sm-offset-2 col-lg-offset-3 col-md-offset-3">
+            <div class="col-lg-6 col-md-7 col-sm-7 col-xs-9 col-xs-offset-1 col-sm-offset-2 col-lg-offset-3 col-md-offset-2">
               <div class="form-group">
                 <label for="" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Name</label>
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="col-lg-7 col-md-7 col-sm-9 col-xs-9">
                   <input type="email" class="form-control" id="" placeholder="">
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 col-xs-offset-1 col-sm-offset-2 col-lg-offset-3 col-md-offset-3">
+            <div class="col-lg-6 col-md-7 col-sm-7 col-xs-9 col-xs-offset-1 col-sm-offset-2 col-lg-offset-3 col-md-offset-2">
               <div class="form-group">
                 <label for="" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Card Number</label>
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="col-lg-7 col-md-7 col-sm-9 col-xs-9">
                   <input type="password" class="form-control" id="" placeholder="">
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 col-xs-offset-1 col-sm-offset-2 col-lg-offset-3 col-md-offset-3">
+            <div class="col-lg-6 col-md-7 col-sm-7 col-xs-9 col-xs-offset-1 col-sm-offset-2 col-lg-offset-3 col-md-offset-2">
               <div class="form-group">
                 <label for="" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Expire date</label>
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="col-lg-7 col-md-7 col-sm-9 col-xs-9">
                   <input type="text" class="form-control" id="" placeholder="">
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 col-xs-offset-1 col-sm-offset-2 col-lg-offset-3 col-md-offset-3">
+            <div class="col-lg-6 col-md-7 col-sm-7 col-xs-9 col-xs-offset-1 col-sm-offset-2 col-lg-offset-3 col-md-offset-2">
               <div class="form-group">
                 <label for="" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Security code</label>
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="col-lg-7 col-md-7 col-sm-9 col-xs-9">
                   <input type="text" class="form-control" id="" placeholder="">
                 </div>
               </div>
@@ -212,17 +213,17 @@
       </div>
       <div class="check-agree">
         <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 col-md-offset-5 col-sm-offset-5 col-xs-offset-5  col-lg-offset-5">
-            <input type="checkbox" name="agree" value=""><span>Agree with term above</span>
+          <div class="agree">
+            <input type="checkbox" name="agree-register" value=""><span>Agree with term above</span>
           </div>
         </div>
       </div>
       <div class="footer">
         <div class="row">
-          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 col-lg-offset-2 col-md-offset-1 col-sm-offset-1">
+          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 col-lg-push-2 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
             <button class="btn btn-cancle">CANCLE</button>
           </div>
-          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 col-lg-pull-0">
             <button class="btn btn-next">NEXT</button>
           </div>
         </div>
@@ -230,35 +231,12 @@
     </div>
   </div>
 
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- javascript -->
   <script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
-DEMO
-0 JPY per mo
-
--Up to 200 photos per photoset
-
--Up to 2 photoset per project
-
--Up to 3* projects
-
-*2 defeaut project to read only
-
-STANDARD
-100,000 JPY per mo
-
--Up to 1000 photos per photoset
-
--Up to 100 photoset per project
-
--Up to 100 projects
-
-PRO
-300,000 JPY per mo
-
--No limit photos count photoset
-
--No limit photoset count project
-
--No limit projects count
