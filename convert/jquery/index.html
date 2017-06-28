@@ -1,0 +1,80 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <meta charset="utf-8">  
+  <title>Jquery</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+  /*  #div {
+      color: yellow;
+    }*/
+  /*  .example-div {
+      color: blue;
+    }*/
+    
+  </style>
+</head>  
+<body>
+  <div class="disable-right-click">
+    Right click can not work in this DIV
+  </div>
+  <div class="container disable-form">
+    <form class="form-inline">
+    <p> Btn will disable, please check accept box!!</p>
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" id="accept">I accept</label>
+    </div>
+    <button type="submit" id="submitbtn" class="btn btn-default" disabled>Submit</button>
+  </form>
+  </div>
+  <div class="blink-text">
+    <span>click div blink text</span>
+    <p>Hello the world!!</p>
+  </div>
+  <div class="table-style">  
+    <table>  
+      <tr>  
+        <th>Student Name</th>  
+        <th>Marks in Science</th>  
+      </tr>  
+      <tr>  
+            <td>Janet</td>  
+        <td>85.00</td>  
+      </tr>  
+      <tr>  
+        <td>David</td>  
+        <td>92.00</td>  
+      </tr>  
+      <tr>  
+        <td>Arthur</td>  
+        <td>79.00</td>  
+      </tr>  
+      <tr>  
+        <td>Bill</td>  
+        <td>82.00</td>  
+      </tr>  
+    </table>
+    <button class="add-zebra-odd">zebra odd</button>  
+    <button class="add-zebra-even">zebra even</button>  
+  </div>  
+  <button id="top">Go Top</button>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript">
+	 Example.init();
+  </script>
+  <div  id="div" class="example-div">
+    this is div
+  </div>
+</body>  
+</html>  
