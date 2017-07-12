@@ -5,6 +5,7 @@
         this.disableRightClick();
         this.acceptRegister();
         this.blinkText();
+        this.changeValueBtn();
         this.Table.init();
      	},
 
@@ -33,6 +34,17 @@
         $(".blink-text").on('click',function(){
           $(".blink-text p").fadeOut(500);
           $(".blink-text p").fadeIn(500);        
+        });
+      },
+      changeValueBtn: function(){
+        $(".btn-change").on('click', function(){
+          var $this = $(this);
+          $this.toggleClass("btn-like");
+          if ($this.hasClass("btn-like")) {
+            $this.text("Like");
+          } else {
+            $this.text("Unlike");
+          }
         });
       },
      	Table: {
